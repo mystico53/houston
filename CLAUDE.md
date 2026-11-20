@@ -48,6 +48,8 @@ people you work with here are designers, not engineers.
 | `game/tokens.ts` | Reads the tokens for the canvas and game |
 | `game/world.ts` | Physics: falling satellites, impacts, debris |
 | `scripts/vercel-git-check.mjs` | Setup check: does the Vercel project deploy from this fork? |
+| `scripts/vercel-link-check.mjs` | Setup check: is this folder linked to a project in the Vercel team picked on the setup card? |
+| `scripts/vercel-git-connect.mjs` | Setup step: connect the Vercel project to the fork in `origin` (works in every shell) |
 
 Keep one job per file so several changes can run in parallel without touching
 the same file. The app is about 1,000 lines; keep it small and readable. Don't
